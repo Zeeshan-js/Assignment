@@ -28,7 +28,7 @@ Assignment-Project/
 ### 1. Clone the Repository
 
 ```sh
-git clone <your-github-repo-link>
+git clone <[your-github-repo-link](https://github.com/Zeeshan-js/Assignment)>
 cd Assignment-Project
 ```
 
@@ -41,7 +41,7 @@ npm install
 
 - Create a `.env` file in `backend/` with the following (example):
   ```
-  PORT=3000
+  PORT=8000
   DATABASE_URL="file:./dev.db"   # Or your actual database URL
   JWT_SECRET=your_jwt_secret
   ```
@@ -76,19 +76,20 @@ npm run dev
 
 ```sh
 cd frontend
-npx expo start
+npx expo start 
 ```
+- If it gives cors error after the command (npx expo start) add --port 5000 like (npx expo start --port 5000)
 - Use the Expo app on your phone, or an emulator, to scan the QR code and run the app.
 
 ---
 
 ## Example Credentials
 
-- **Guest Login:**  
+- **Mock Login:**  
   The frontend provides a "Sign In (as Guest)" button.  
-  This will log you in as:
-  - **Email:** `guest@example.com`
-  - **Name:** `Guest`
+  This will log you in as the mock user:
+  - **Email:** `one@gmail.com`
+  - **Password:** `one`
 
 - **Normal Login:**  
   If you have seeded users in your database, use their credentials.  
@@ -117,6 +118,10 @@ npx expo start
 - Ensure your backend CORS settings allow the frontend's port (default: 19006 for Expo).
 - Update `DATABASE_URL` in `.env` as needed for your environment.
 - If you want to use JWT authentication, set a strong `JWT_SECRET` in your `.env`.
+
+- My command that runs this project in my system
+- frontend :- npx expo start --port --web
+- backend:- npm run dev
 
 ---
 
