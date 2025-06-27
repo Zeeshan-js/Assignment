@@ -69,8 +69,8 @@ npm install
 cd backend
 npm run dev
 ```
-- The backend will be available at `http://localhost:3000/graphql` (GraphQL endpoint).
-- Socket.IO will be available at `http://localhost:3000`.
+- The backend will be available at `http://localhost:8000/graphql` (GraphQL endpoint).
+- Socket.IO will be available at `http://localhost:8000`.
 
 ### 2. Start the Frontend
 
